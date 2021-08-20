@@ -1,0 +1,173 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+nav{
+  width: 100%;height: 13vh;
+  background: rgba(0, 0, 0, 0.815);
+  color: white;display: flex;justify-content: space-between;
+  align-items: center;text-transform: uppercase;
+}
+nav .logo{
+  width: 25%;text-align:center;
+  color:white;
+}
+
+nav .logo a{
+  text-decoration: none;
+  color: white;
+}
+
+nav .menu{
+  width: 40%;
+  display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+  width: 25%;
+  text-decoration: none;color: white;
+  font-weight: bold;
+}
+
+nav .menu a::first-line{
+  color: #d1972a
+}
+
+body{
+  background:rgba(15, 15, 15, 0.856);
+}
+.imageslide{
+  width: 70%;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform:translate(-50%,50%);
+  background-image: url("../web/images/hima.jpeg");
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px 5px white;
+  animation:slider 9s infinite linear;
+}
+
+@keyframes slider{
+  0%{ background-image: url(../web/images/ice.jpg); }
+  35%{ background-image: url(../web/images/lake.jpg); }
+  75%{ background-image: url(../web/images/tajm.jpg); }
+}
+
+.para h3{
+  width: 100%;
+  font-size: 3em;
+  justify-content: left;
+  padding-left: 5%;
+  padding-top: 40%;
+  color: white;
+}
+
+.para p{
+  width: 100%;
+  font-size: 2em;
+  justify-content: left;
+  padding-left: 5%;
+  padding-top: 2%;
+  align-items: center;
+  white-space:pre-line;
+  color:white
+}
+
+.divcon{
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  font-size: 150%;
+  color: white;
+  display: flex;
+  padding-left: 0%;  
+  justify-content:center;
+}
+.change_content:after{
+  text-align: center;
+  justify-content: center;
+  content:"";
+  animation :changetext 8s infinite linear;
+  color: #aaeb13;
+  align-items: center;
+}
+
+@keyframes changetext{
+  0%,100%{content: " Kerala";}
+  25%{content: " Delhi";}
+  50%{content: " Goa";}
+  75%{content: " Jammu and Kashmir";}
+}
+
+footer{
+  background: #111;
+  height: auto;
+  width: 100vw; 
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transform: color .4s ease;
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 25px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .7;
+  font-weight: 200;
+}
+
